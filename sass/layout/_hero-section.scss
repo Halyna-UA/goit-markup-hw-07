@@ -11,7 +11,7 @@
       url("../images/heroimg.jpg");
   }
   .hero {
-    background-color: var(--same-section-color);
+    background-color: $same-section-color;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -30,8 +30,8 @@
   }
   
   .button-hero {
-    color: var(--primery-br-color);
-    background: var(--accent-color);
+    color: $primery-br-color;
+    background: $accent-color;
     font-family: inherit;
     font-size: 16px;
     line-height: 1.8;
@@ -43,11 +43,11 @@
     min-width: 210px;
     height: 50px;
     padding: 10px 32px;
-    transition: transform var(--transition);
+    transition: transform $transition;
     transition-property: text-shadow, background-color;
   }
   .button-hero:hover,
   .button-hero:focus {
-    text-shadow: var(--bottom-hero-shaddow);
-    background-color: var(--bottom-hero-hover);
+    text-shadow: $bottom-hero-shaddow;
+    background-color: $bottom-hero-hover;
   }

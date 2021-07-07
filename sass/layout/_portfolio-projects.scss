@@ -12,7 +12,7 @@
   }
   .project-card {
     display: block;
-    transition: transform var(--transition);
+    transition: transform $transition;
     transition-property: box-shadow;
   }
   .project-card:hover,
@@ -22,9 +22,9 @@
   }
   
   .pack {
-    border-right: var(--border);
-    border-bottom: var(--border);
-    border-left: var(--border);
+    border-right: $border;
+    border-bottom: $border;
+    border-left: $border;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -44,13 +44,13 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 2;
-    color: var(--title-text-color);
+    color: $title-text-color;
     flex-basis: 322px;
   }
   .text.disc {
     font-size: 16px;
     line-height: 1.8;
-    color: var(--primery-text-color);
+    color: $primery-text-color;
     flex-basis: 322px;
   }
   /*переходи і анімація*/
@@ -82,8 +82,8 @@
   .only-project {
     font-size: 18px;
     line-height: 1.5;
-    color: var(--primery-br-color);
-    background-color: var(--accent-color-opacity);
+    color: $primery-br-color;
+    background-color: $accent-color-opacity;
     top: 0px;
     right: 0px;
     width: 100%;

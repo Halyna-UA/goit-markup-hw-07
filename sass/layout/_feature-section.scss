@@ -55,11 +55,11 @@
     font-size: 14px;
     line-height: 1.1;
     text-transform: uppercase;
-    color: var(--title-text-color);
+    color: $title-text-color;
   }
   
   .text.subject {
     font-size: 14px;
     line-height: 1.7;
-    color: var(--primery-text-color);
+    color: $primery-text-color;
   }
