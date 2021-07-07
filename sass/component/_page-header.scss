@@ -1,0 +1,10 @@
+.page-header {
+  border-bottom: $border;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  &_.header-nav {
+    display: flex;
+    align-items: center;
+  }
+}
