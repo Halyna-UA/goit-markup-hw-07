@@ -1,0 +1,183 @@
+.footer {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.7;
+    background-color: var(--same-section-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .logo-footer {
+    font-family: "Ralwey", sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.1;
+    text-decoration: none;
+    color: var(--primery-br-color);
+  }
+  .footer > a {
+    margin-bottom: 0px;
+  }
+  
+  .footer .logo {
+    margin-bottom: 20px;
+  }
+  
+  .address-list > p {
+    margin-top: 0px;
+  }
+  .text-address {
+    margin-bottom: 9px;
+  }
+  .address-list {
+    font-style: normal;
+    color: var(--primery-br-color);
+    font-style: regular;
+    font-size: 14px;
+    line-height: 1.1;
+    width: 231px;
+    margin-right: 70px;
+  }
+  .contact-list {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: 0px;
+  }
+  .mail {
+    margin-bottom: 9px;
+  }
+  
+  .join {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .colone {
+    width: 231px;
+  }
+  .coltwo {
+    margin-left: 70px;
+  }
+  
+  .coltwo > p {
+    margin-top: 0px;
+  }
+  .to-us {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--primery-br-color);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .us-list {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px;
+  }
+  .us-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: #fff;
+    box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.1);
+    transition: transform var(--transition);
+    transition-property: background;
+  }
+  
+  .us-item:not(:last-child) {
+    margin-right: 10px;
+  }
+  
+  .us-nav:hover,
+  .us-nav:focus {
+    background: var(--accent-color);
+  }
+  
+  .icon-us {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+  .colthree {
+    margin-left: 93px;
+  }
+  .colthree > p {
+    margin-top: 0;
+  }
+  .footer-form-mailing {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-form > p {
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .with-us {
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.1;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--primery-br-color);
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .mailing-subscribe {
+    display: inline-block;
+    width: 358px;
+    margin-right: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 4px;
+    
+  }
+  .mailing-subscribe > input{
+    border-style: none;
+  }
+  .mailing-subscribe-input {
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: inherit;
+    
+  }
+  .mailing-subscribe-input::placeholder{
+    
+    font-size: 16px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .btn-subscribe {
+    width: 200px;
+    height: 50px;
+    padding: 10px 28px;
+    margin: 0px;
+    position: relative;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    
+  }

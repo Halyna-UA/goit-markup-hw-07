@@ -1,0 +1,42 @@
+.vip {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .vip .clients {
+    margin-top: 0px;
+  }
+  .clients {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.1;
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .regular-list {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .partner-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    fill: var(--border-clients);
+    border: 1px solid var(--border-clients);
+    border-radius: 4px;
+    transition: transform var(--transition);
+    transition-property: fill, border;
+  }
+  .r-item:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .partner-nav:hover,
+  .partner-nav:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+  

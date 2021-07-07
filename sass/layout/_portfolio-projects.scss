@@ -1,0 +1,95 @@
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  
+  .p-item {
+    flex-basis: calc((100% / 3) - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .project-card {
+    display: block;
+    transition: transform var(--transition);
+    transition-property: box-shadow;
+  }
+  .project-card:hover,
+  .project-card:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  .pack {
+    border-right: var(--border);
+    border-bottom: var(--border);
+    border-left: var(--border);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .pack > h3 {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    text-align: left;
+  }
+  .pack > p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+  .title .lead {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--title-text-color);
+    flex-basis: 322px;
+  }
+  .text.disc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--primery-text-color);
+    flex-basis: 322px;
+  }
+  /*переходи і анімація*/
+  .owerbox {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  .thumb-project {
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .owerlay {
+    transition: box-shadow;
+  }
+  .project-card:hover .thumb-project,
+  .project-card:focus .thumb-project {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .only-project {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--primery-br-color);
+    background-color: var(--accent-color-opacity);
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 63px 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  

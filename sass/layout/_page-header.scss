@@ -1,0 +1,9 @@
+.page-header {
+  border-bottom: var(--border);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.page-header .header-nav {
+  display: flex;
+  align-items: center;
+}
