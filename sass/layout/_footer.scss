@@ -5,15 +5,16 @@
     background-color: $same-section-color;
     padding-top: 60px;
     padding-bottom: 60px;
+      &.logo {
+        margin-bottom: 20px;
+          @extend %logo;
+      }
   }
   
   .footer > a {
     margin-bottom: 0px;
   }
-  .footer .logo {
-    margin-bottom: 20px;
-      @extend %logo;
-    }
+ 
   .address-list > p {
     margin-top: 0px;
   }
@@ -53,8 +54,6 @@
       margin-top: 0px;
     }
   }
-  
-  
   .to-us {
     font-weight: bold;
     text-transform: uppercase;
@@ -145,7 +144,7 @@
     margin: 0px;
     position: relative;
     background-color: $accent-color;
-    color: #fff;
+    color: $primery-br-color;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-size: 16px;
@@ -157,3 +156,16 @@
     cursor: pointer;
     
   }
+  .icon-icon-send {
+    display: inline-flex;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    fill: $primery-br-color;
+    transition: transform var(--transition);
+    transition-property: fill;
+  } 
