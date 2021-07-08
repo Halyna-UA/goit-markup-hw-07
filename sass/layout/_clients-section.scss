@@ -1,9 +1,9 @@
 .vip {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .vip .clients {
-    margin-top: 0px;
+    &.clients {
+      margin-top: 0px;
+    }
   }
   .clients {
     font-weight: bold;
@@ -29,14 +29,15 @@
     border-radius: 4px;
     transition: transform $transition;
     transition-property: fill, border;
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+      }
   }
   .r-item:not(:last-child) {
     margin-right: 30px;
   }
   
-  .partner-nav:hover,
-  .partner-nav:focus {
-    fill: $accent-color;
-    border: 1px solid $accent-color;
-  }
+  
   

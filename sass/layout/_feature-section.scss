@@ -15,28 +15,30 @@
   .f-item > h3 {
     margin-top: 30px;
     margin-bottom: 10px;
+      & > p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
   }
-  .f-item > p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+  
   .f-item {
     display: inline-block;
     width: 270px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+      &::before {
+        display: block;
+        content: "";
+        height: 120px;
+        background-size: 0.2, 0.3;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #f5f4fa;
+        border-radius: 4px;
+      }
   }
-  .f-item:not(:last-child) {
-    margin-right: 30px;
-  }
-  .f-item::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-size: 0.2, 0.3;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-  }
+  
   .icon-antenna::before {
     background-image: url(../images/antenna.svg);
   }

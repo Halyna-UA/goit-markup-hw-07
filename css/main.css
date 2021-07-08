@@ -51,7 +51,7 @@ img {
 }
 
 .page-header {
-  border-bottom: var(--border);
+  border-bottom: 1px solid #ececec;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -68,7 +68,7 @@ img {
   font-size: 26px;
   line-height: 1.1;
   text-decoration: none;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .logo .logo-text-second {
@@ -77,7 +77,7 @@ img {
   font-size: 26px;
   line-height: 1.1;
   text-decoration: none;
-  color: var(--brand-color);
+  color: black;
 }
 
 .main-nav,
@@ -105,7 +105,7 @@ img {
 }
 
 .n-item-color {
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .icon-envelope-h {
@@ -117,12 +117,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   fill: currentColor;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
 
 .icon-envelope-h:hover {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .icon-smartphone-h {
@@ -135,12 +135,12 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   fill: currentColor;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
 
 .icon-smartphone-h:hover {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .contacts {
@@ -148,30 +148,30 @@ img {
 }
 
 .list.link {
-  color: var(--primery-text-color);
+  color: #757575;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
 
 .link:hover,
 .link:focus,
 .link.current {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .link.n-item-color,
 .link.auth-nav {
   display: flex;
   align-items: center;
-  transition: color var(--transition);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav {
-  color: var(--primery-text-color);
+  color: #757575;
 }
 
 /*підкреслювання активної сторінки, додатковий клас menu*/
@@ -189,7 +189,7 @@ img {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   margin-bottom: -30px;
 }
 
@@ -202,7 +202,7 @@ img {
 }
 
 .hero {
-  background-color: var(--same-section-color);
+  background-color: #2f303a;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -221,8 +221,8 @@ h1 {
 }
 
 .button-hero {
-  color: var(--primery-br-color);
-  background: var(--accent-color);
+  color: #fff;
+  background: #2196f3;
   font-family: inherit;
   font-size: 16px;
   line-height: 1.8;
@@ -234,14 +234,14 @@ h1 {
   min-width: 210px;
   height: 50px;
   padding: 10px 32px;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: text-shadow, background-color;
 }
 
 .button-hero:hover,
 .button-hero:focus {
-  text-shadow: var(--bottom-hero-shaddow);
-  background-color: var(--bottom-hero-hover);
+  text-shadow: rgba(0, 0, 0, 0.15);
+  background-color: #188ce8;
 }
 
 .container.content {
@@ -311,13 +311,13 @@ h1 {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .text.subject {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--primery-text-color);
+  color: #757575;
 }
 
 .work {
@@ -333,7 +333,7 @@ h1 {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
-  color: var(--title-text-color);
+  color: #212121;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -374,7 +374,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primery-br-color);
+  color: #fff;
   margin: 0px;
 }
 
@@ -392,7 +392,7 @@ h1 {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.1;
-  color: var(--title-text-color);
+  color: #212121;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -413,9 +413,9 @@ h1 {
 
 .box {
   width: 270px;
-  border-right: var(--border);
-  border-bottom: var(--border);
-  border-left: var(--border);
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -436,15 +436,15 @@ h1 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1;
-  color: var(--title-text-color);
+  color: #212121;
   margin: 0px;
 }
 
 .team .text .position {
   font-size: 16px;
   line-height: 1.1;
-  color: var(--primery-text-color);
-  box-shadow: var(--box-shadow-team);
+  color: #757575;
+  box-shadow: rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.14), rgba(0, 0, 0, 0.12);
 }
 
 .social-list {
@@ -461,15 +461,15 @@ h1 {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: var(--border-clients);
-  transition: transform var(--transition);
+  fill: #afb1b8;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, background;
 }
 
 .social-nav:hover,
 .social-nav:focus {
   fill: #ffffff;
-  background: var(--accent-color);
+  background: #2196f3;
 }
 
 .soc-item:not(:last-child) {
@@ -523,15 +523,15 @@ h1 {
 
 .partner-nav:hover,
 .partner-nav:focus {
-  fill: var(--accent-color);
-  border: 1px solid var(--accent-color);
+  fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 .footer {
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
-  background-color: var(--same-section-color);
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -542,7 +542,7 @@ h1 {
   font-size: 26px;
   line-height: 1.1;
   text-decoration: none;
-  color: var(--primery-br-color);
+  color: #fff;
 }
 
 .footer > a {
@@ -563,7 +563,7 @@ h1 {
 
 .address-list {
   font-style: normal;
-  color: var(--primery-br-color);
+  color: #fff;
   font-style: regular;
   font-size: 14px;
   line-height: 1.1;
@@ -605,7 +605,7 @@ h1 {
   line-height: 1.1;
   text-decoration: none;
   font-style: normal;
-  color: var(--primery-br-color);
+  color: #fff;
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -626,7 +626,7 @@ h1 {
   height: 44px;
   fill: #fff;
   box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.1);
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background;
 }
 
@@ -636,7 +636,7 @@ h1 {
 
 .us-nav:hover,
 .us-nav:focus {
-  background: var(--accent-color);
+  background: #2196f3;
 }
 
 .icon-us {
@@ -670,7 +670,7 @@ h1 {
   line-height: 1.1;
   text-decoration: none;
   font-style: normal;
-  color: var(--primery-br-color);
+  color: #fff;
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -711,7 +711,7 @@ h1 {
   padding: 10px 28px;
   margin: 0px;
   position: relative;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -732,7 +732,7 @@ h1 {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition), visibility var(--transition);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-content {
@@ -743,7 +743,7 @@ h1 {
   max-width: 528px;
   width: 100%;
   max-height: 581px;
-  background-color: var(--primery-br-color);
+  background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -753,7 +753,7 @@ h1 {
   position: absolute;
   top: 8px;
   right: 8px;
-  background-color: var(--primery-br-color);
+  background-color: #fff;
   color: #000;
   width: 30px;
   height: 30px;
@@ -762,13 +762,13 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 6px;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
 
 .btnclose:hover,
 .btnclose:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal-button-close-icon {
@@ -778,13 +778,13 @@ h1 {
   align-items: center;
   justify-content: center;
   fill: currentColor;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill;
 }
 
 .modal-button-close-icon:hover,
 .modal-button-close-icon:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal.is-hidden {
@@ -811,7 +811,7 @@ h1 {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--link-color);
+  color: #212121;
 }
 
 .modal-form-input input {
@@ -826,25 +826,25 @@ h1 {
   outline: none;
   padding-left: 42px;
   margin-right: 0px;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, border-color;
 }
 
 .modal-form-input:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .modal-form-input:focus + .modal-form-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .modal-form-input:required:focus:valid {
-  border-color: var(--accent-color);
-  fill: var(--accent-color);
+  border-color: #2196f3;
+  fill: #2196f3;
 }
 
 .modal-form-text:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .modal-form-field {
@@ -853,7 +853,7 @@ h1 {
   font-size: 12px;
   line-height: 1.1;
   letter-spacing: 0.01em;
-  color: var(--primery-text-color);
+  color: #757575;
   position: relative;
 }
 
@@ -883,7 +883,7 @@ h1 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color;
 }
 
@@ -907,12 +907,12 @@ h1 {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: border-color, background-image;
 }
 
 .modal-form-check:focus + .modal-form-check-wrap {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .modal-form-check:checked + .modal-form-check-wrap {
@@ -929,7 +929,7 @@ label.modal-form-check-accept {
 
 .modal-form-btn {
   align-self: center;
-  background: var(--accent-color);
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
@@ -938,12 +938,12 @@ label.modal-form-check-accept {
   line-height: 1.8;
   cursor: pointer;
   padding: 10px 55px;
-  color: var(--primery-br-color);
+  color: #fff;
   margin-top: 30px;
 }
 
 .modal-form-check-info {
-  color: var(--accent-color);
+  color: #2196f3;
   text-decoration: underline;
 }
 
@@ -960,7 +960,7 @@ label.modal-form-check-accept {
 }
 
 .button-item {
-  background: var(--button-nav-color);
+  background: #f5f4fa;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -970,7 +970,7 @@ label.modal-form-check-accept {
   border: none;
   cursor: pointer;
   padding: 6px 22px;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background, box-shadow;
 }
 
@@ -980,8 +980,8 @@ label.modal-form-check-accept {
 
 .button-item:hover,
 .button-item:focus {
-  color: var(--primery-br-color);
-  background: var(--accent-color);
+  color: #fff;
+  background: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -1000,7 +1000,7 @@ label.modal-form-check-accept {
 
 .project-card {
   display: block;
-  transition: transform var(--transition);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: box-shadow;
 }
 
@@ -1010,9 +1010,9 @@ label.modal-form-check-accept {
 }
 
 .pack {
-  border-right: var(--border);
-  border-bottom: var(--border);
-  border-left: var(--border);
+  border-right: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  border-left: 1px solid #ececec;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1035,14 +1035,14 @@ label.modal-form-check-accept {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  color: var(--title-text-color);
+  color: #212121;
   flex-basis: 322px;
 }
 
 .text.disc {
   font-size: 16px;
   line-height: 1.8;
-  color: var(--primery-text-color);
+  color: #757575;
   flex-basis: 322px;
 }
 
@@ -1078,8 +1078,8 @@ label.modal-form-check-accept {
 .only-project {
   font-size: 18px;
   line-height: 1.5;
-  color: var(--primery-br-color);
-  background-color: var(--accent-color-opacity);
+  color: #fff;
+  background-color: rgba(33, 150, 243, 0.9);
   top: 0px;
   right: 0px;
   width: 100%;

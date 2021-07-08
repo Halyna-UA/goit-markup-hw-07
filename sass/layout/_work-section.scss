@@ -1,9 +1,9 @@
 .work {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-  .work .disc {
-    margin-top: 0px;
+    &.disc {
+      margin-top: 0px;
+    }
   }
   .disc {
     font-weight: bold;
@@ -19,32 +19,33 @@
   }
   .discription-list .d-item {
     width: 370px;
-  }
-  .discription-list .d-item:not(:last-child) {
-    margin-right: 30px;
+    & .d-item:not(:last-child) {
+      margin-right: 30px;
+    }
   }
   .adds {
     display: inline-block;
     position: relative;
+    .thumb-& {
+      display: inline-block;
+      position: absolute;
+      bottom: 0px;
+      overflow: hidden;
+      background: rgba(47, 48, 58, 0.8);
+      width: 370px;
+      height: 70px;
+      padding: 27px;
+    }
+    .work-& {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.4;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $primery-br-color;
+      margin: 0px;
+    }
   }
   
-  .thumb-adds {
-    display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    overflow: hidden;
-    background: rgba(47, 48, 58, 0.8);
-    width: 370px;
-    height: 70px;
-    padding: 27px;
-  }
-  .work-add {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.4;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $primery-br-color;
-    margin: 0px;
-  }
+ 

@@ -7,22 +7,13 @@
     padding-bottom: 60px;
   }
   
-  .logo-footer {
-    font-family: "Ralwey", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.1;
-    text-decoration: none;
-    color: $primery-br-color;
-  }
   .footer > a {
     margin-bottom: 0px;
   }
-  
   .footer .logo {
     margin-bottom: 20px;
-  }
-  
+      @extend %logo;
+    }
   .address-list > p {
     margin-top: 0px;
   }
@@ -58,11 +49,12 @@
   }
   .coltwo {
     margin-left: 70px;
+    & > p {
+      margin-top: 0px;
+    }
   }
   
-  .coltwo > p {
-    margin-top: 0px;
-  }
+  
   .to-us {
     font-weight: bold;
     text-transform: uppercase;
@@ -78,30 +70,17 @@
     display: flex;
     justify-content: flex-start;
     margin: 0px;
+      @extend %us-nav;
   }
-  .us-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    fill: #fff;
-    box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.1);
-    transition: transform $transition;
-    transition-property: background;
-  }
-  
+
+  .us-nav:hover,
+      &:focus{
+        background: $accent-color;
+      }    
+    
   .us-item:not(:last-child) {
     margin-right: 10px;
   }
-  
-  .us-nav:hover,
-  .us-nav:focus {
-    background: $accent-color;
-  }
-  
   .icon-us {
     width: 20px;
     height: 20px;
@@ -109,15 +88,15 @@
   }
   .colthree {
     margin-left: 93px;
+    & > p {
+      margin-top: 0;
+    }
   }
-  .colthree > p {
-    margin-top: 0;
-  }
+  
   .footer-form-mailing {
     display: flex;
     flex-direction: row;
   }
-  
   .footer-form > p {
     margin-top: 0px;
     margin-right: 0px;
@@ -139,10 +118,9 @@
     margin-right: 12px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 4px;
-    
-  }
-  .mailing-subscribe > input{
-    border-style: none;
+    & > input{
+      border-style: none;
+    }
   }
   .mailing-subscribe-input {
     width: 100%;
@@ -151,16 +129,14 @@
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: inherit;
-    
-  }
-  .mailing-subscribe-input::placeholder{
-    
-    font-size: 16px;
-    line-height: 1.2;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder{
+      font-size: 16px;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
   }
   .btn-subscribe {
     width: 200px;

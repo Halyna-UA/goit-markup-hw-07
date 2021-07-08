@@ -1,0 +1,14 @@
+%us-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: #fff;
+    box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.1);
+    transition: transform $transition;
+    transition-property: background;
+  }
+  

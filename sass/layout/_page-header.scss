@@ -2,6 +2,8 @@
   border-bottom: $border;
   padding-top: 24px;
   padding-bottom: 24px;
+    @extend %logo;
+    @include logo-company ($brand-color);
 }
 .page-header .header-nav {
   display: flex;

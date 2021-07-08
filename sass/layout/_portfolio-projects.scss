@@ -4,7 +4,6 @@
     margin-top: -30px;
     margin-left: -30px;
   }
-  
   .p-item {
     flex-basis: calc((100% / 3) - 30px);
     margin-top: 30px;
@@ -14,13 +13,12 @@
     display: block;
     transition: transform $transition;
     transition-property: box-shadow;
+      &:hover,
+      &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+          1px 4px 6px rgba(0, 0, 0, 0.16);
+      }
   }
-  .project-card:hover,
-  .project-card:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  
   .pack {
     border-right: $border;
     border-bottom: $border;
@@ -34,11 +32,11 @@
     margin-top: 0px;
     margin-bottom: 4px;
     text-align: left;
-  }
-  .pack > p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: left;
+    & > p {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      text-align: left;
+    }
   }
   .title .lead {
     font-weight: bold;
