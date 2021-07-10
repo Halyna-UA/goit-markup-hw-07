@@ -15,7 +15,7 @@
     margin-bottom: 0px;
   }
  
-  .address-list > p {
+  .address-list > text {
     margin-top: 0px;
   }
   .text-address {
@@ -50,18 +50,16 @@
   }
   .coltwo {
     margin-left: 70px;
-    & > p {
+    & > text {
       margin-top: 0px;
     }
   }
   .to-us {
+    @include font(14px, 400, 1.1);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.1;
     text-decoration: none;
-    font-style: normal;
     color: $primery-br-color;
-    font-size: 14px;
     margin-bottom: 20px;
   }
   
@@ -73,7 +71,7 @@
   }
 
   .us-nav:hover,
-      &:focus{
+  .us-nav:focus{
         background: $accent-color;
       }    
     
@@ -87,7 +85,7 @@
   }
   .colthree {
     margin-left: 93px;
-    & > p {
+    & > text {
       margin-top: 0;
     }
   }
@@ -96,7 +94,7 @@
     display: flex;
     flex-direction: row;
   }
-  .footer-form > p {
+  .footer-form > text {
     margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
@@ -138,6 +136,7 @@
     }
   }
   .btn-subscribe {
+    @include font(16px, 700, 1.8);
     width: 200px;
     height: 50px;
     padding: 10px 28px;
@@ -146,9 +145,6 @@
     background-color: $accent-color;
     color: $primery-br-color;
     font-family: "Roboto", sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.8;
     text-align: center;
     border-radius: 4px;
     border: none;

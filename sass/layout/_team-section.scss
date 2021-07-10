@@ -64,8 +64,8 @@
       @extend %us-nav;
   }
  
-    @extend %us-nav:hover,
-    @extend %us-nav:focus {
+  .social-nav:hover,
+  .social-nav:focus {
       fill: #ffffff;
       background: $accent-color;
   }

@@ -28,7 +28,7 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-  .pack > h3 {
+  .pack > .lead {
     margin-top: 0px;
     margin-bottom: 4px;
     text-align: left;
@@ -39,9 +39,7 @@
     }
   }
   .title .lead {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
+    @include font(18px, 700, 2);
     color: $title-text-color;
     flex-basis: 322px;
   }

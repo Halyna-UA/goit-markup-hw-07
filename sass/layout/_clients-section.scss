@@ -6,9 +6,7 @@
     }
   }
   .clients {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 1.1;
+    @include font(36px, 700, 1.1);
     color: $title-text-color;
     text-align: center;
     margin-bottom: 50px;
