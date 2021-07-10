@@ -16,25 +16,25 @@
 <body>
     <!--Верх сторінки-->
     <header class="page-header">
-            <div class="container header-nav">
-                    <nav class="main-nav">
-                        <a href="./index.html" class="logo">Web<span
-                                class="logo-text-second">Studio</span></a>
+        <div class="container page-header__container">
+                <nav class="main-nav">
+                    <a href="./index.html" class="logo">Web<span
+                            class="logo-text-second">Studio</span></a>
 
-                        <ul class="list pages-nav menu">
-                            <li class="n-item"><a href="./index.html" class="link current n-item-color">Студия</a> </li>
-                            <li class="n-item"><a href="./portfolio.html" class="link n-item-color">Портфолио</a> </li>
-                            <li class="n-item"><a href="" class="link n-item-color">Контакты</a> </li>
-                        </ul>
-                    </nav>
+                    <ul class="main-nav__list list">
+                        <li class="main-nav__item"><a href="./index.html" class="main-nav__link main-nav__link--current">Студия</a> </li>
+                        <li class="main-nav__item"><a href="./portfolio.html" class="main-nav__link">Портфолио</a> </li>
+                        <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a> </li>
+                    </ul>
+                </nav>
                 
-                        <ul class="list contacts">
-                            <li class="a-item envelope"><a href="info@devstudio.com" class="link auth-nav"> 
-                                <svg class="icon-envelope-h" width="16" height="12" viewBox="0 0 43 32">
+                        <ul class="list contacts__list">
+                            <li class="contacts__item envelope"><a href="info@devstudio.com" class="contacts__link"> 
+                                <svg class="contacts__icon--envelope-h" width="16" height="12" viewBox="0 0 43 32">
                                     <use href="./images/symbol-defs.svg#icon-enveloperight"></use>
                                 </svg>info@devstudio.com</a></li>
-                            <li class="a-item smartphone"><a href="+380961111111" class="link auth-nav">
-                                <svg class="icon-smartphone-h" width="10" height="16" viewBox="0 0 20 32">
+                            <li class="contacts__item smartphone"><a href="+380961111111" class="contacts__link">
+                                <svg class="contacts__icon--smartphone-h" width="10" height="16" viewBox="0 0 20 32">
                                     <use href="./images/symbol-defs.svg#icon-smartphoneright"></use>
                             </svg>+38 096 111 11 11</a></li>
                         </ul>
@@ -371,10 +371,10 @@
                 
                 </button>
             <form action="#" class="modal-form">
-                <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                <p class="modal-title title">Оставьте свои данные, мы вам перезвоним</p>
                     <label class="modal-form-field">Имя
                         <span class="modal-form-field-wrapper">
-                            <input type="text" minlength="2" name="username" class="modal-form-input" placeholder=" " required/>
+                            <input type="text" minlength="2" name="username" class="modal-form-input input-display" placeholder=" " required/>
                         <svg class="modal-form-icon" width="18" height="18" viewBox="0 0 32 32"> 
                             <use href="./images/symbol-defs.svg#icon-person"></use>
                         </svg>

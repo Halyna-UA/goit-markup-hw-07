@@ -7,22 +7,22 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity $transition, visibility $transition;
+      &-content {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 528px;
+        width: 100%;
+        max-height: 581px;
+        background-color: $primery-br-color;
+        border-radius: 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+          0px 2px 1px rgba(0, 0, 0, 0.2);
+          @extend %btnclose-modal;
+      }
   }
-  .modal-content {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 528px;
-    width: 100%;
-    max-height: 581px;
-    background-color: $primery-br-color;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-      @extend %btnclose-modal;
-  }
-    
+  
   .modal-button-close-icon {
     display: flex;
     width: 100%;
@@ -32,13 +32,11 @@
     fill: currentColor;
     transition: transform $transition;
     transition-property: fill;
+      &:hover,
+      &:focus {
+        fill: $accent-color;
+      }
   }
-  
-  .modal-button-close-icon:hover,
-  .modal-button-close-icon:focus {
-    fill: $accent-color;
-  }
-  
   .modal.is-hidden {
     pointer-events: none;
     visibility: hidden;
@@ -48,7 +46,7 @@
     display: flex;
     flex-direction: column;
     padding: 40px;
-    & > p {
+    & > title {
       margin: 0px 0px 12px 0px;
     }
   }
@@ -63,7 +61,7 @@
     letter-spacing: 0.03em;
     color: $link-color;
   }
-  .modal-form-input input{
+  .modal-form-input .input-display{
     display: none;
   }
   .modal-form-input {
@@ -76,16 +74,16 @@
     margin-right: 0px;
     transition: transform $transition;
     transition-property: fill, border-color;
-  }
-  .modal-form-input:focus {
-    border-color: $accent-color;
-  }
-  .modal-form-input:focus + .modal-form-icon {
-    fill: $accent-color;
-  }
-  .modal-form-input:required:focus:valid {
-    border-color: $accent-color;
-    fill: $accent-color;
+      &:focus {
+        border-color: $accent-color;
+      }
+      &:focus + .modal-form-icon {
+        fill: $accent-color;
+      }
+      &:required:focus:valid {
+        border-color: $accent-color;
+        fill: $accent-color;
+      }
   }
   .modal-form-text:focus{
     border-color: $accent-color;
@@ -135,8 +133,14 @@
   .modal-form-check{
     appearance: none;
     position: absolute;
+      &:focus + .modal-form-check-wrap{
+        border-color: $accent-color;
+      }
+      &:checked + .modal-form-check-wrap {
+        background-image: url(../images/icon-check-svg.svg);
+        background-size: contain;
+      }
   }
-  
   .modal-form-check-wrap {
     width: 15px;
     height: 15px;
@@ -147,16 +151,7 @@
     outline: none;
     transition: transform $transition;
     transition-property: border-color, background-image;
-  }
-  
-  .modal-form-check:focus + .modal-form-check-wrap{
-    border-color: $accent-color;
     
-  }
-  .modal-form-check:checked + .modal-form-check-wrap {
-    
-    background-image: url(../images/icon-check-svg.svg);
-    background-size: contain;
   }
   label.modal-form-check-accept {
     display: inline-block;

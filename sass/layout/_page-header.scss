@@ -2,10 +2,15 @@
   border-bottom: $border;
   padding-top: 24px;
   padding-bottom: 24px;
-    @extend %logo;
-    @include logo-company ($brand-color);
+  
+    
 }
-.page-header .header-nav {
+.page-header__container {
   display: flex;
   align-items: center;
 }
+/*
+.page-header .header-nav {
+  display: flex;
+  align-items: center;
+}*/
