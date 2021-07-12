@@ -1,17 +1,8 @@
 .logo {
-    display: block;
-    font-family: "Ralwey", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.1;
-    text-decoration: none;
-    color: $accent-color;
-  }
-  .logo .logo-text-second {
-    font-family: "Ralwey", sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.1;
-    text-decoration: none;
-    color: $brand-color;
-  }
+  @extend %logo;
+  color: $accent-color;
+}
+.logo__text--second {
+  @extend %logo;
+  color: $brand-color;
+}

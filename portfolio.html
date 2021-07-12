@@ -16,30 +16,31 @@
 
 <body>
     <!--Верх сторінки-->
-<header class="page-header">
-    <div class="container header-nav">
-        <nav class="main-nav">
-            <a href="./index.html" class="logo">Web<span class="logo-text-second">Studio</span></a>
+    <header class="page--header">
+        <div class="container page--header__container">
+                <nav class="main--nav">
+                    <a href="./index.html" class="logo">Web<span
+                            class="logo__text--second">Studio</span></a>
 
-            <ul class="list pages-nav">
-                <li class="n-item"><a href="./index.html" class="link n-item-color">Студия</a> </li>
-                <li class="n-item"><a href="./portfolio.html" class="link current n-item-color">Портфолио</a> </li>
-                <li class="n-item"><a href="" class="link n-item-color">Контакты</a> </li>
-            </ul>
-        </nav>
-
-        <ul class="list contacts">
-            <li class="a-item envelope"><a href="info@devstudio.com" class="link auth-nav"> 
-                <svg class="icon-envelope-h" width="16" height="12" viewBox="0 0 43 32">
-                    <use href="./images/symbol-defs.svg#icon-enveloperight"></use>
-                </svg>info@devstudio.com</a></li>
-            <li class="a-item smartphone"><a href="+380961111111" class="link auth-nav">
-                <svg class="icon-smartphone-h" width="10" height="16" viewBox="0 0 20 32">
-                    <use href="./images/symbol-defs.svg#icon-smartphoneright"></use>
-            </svg>+38 096 111 11 11</a></li>
-        </ul>
-    </div>
-</header>
+                    <ul class="list main--nav__list">
+                        <li class="main--nav__item"><a href="./index.html" class="main--nav__link ">Студия</a> </li>
+                        <li class="main--nav__item"><a href="./portfolio.html" class="main--nav__link main--nav__link--current">Портфолио</a> </li>
+                        <li class="main--nav__item"><a href="" class="main--nav__link">Контакты</a> </li>
+                    </ul>
+                </nav>
+                
+                        <ul class="list contacts__list">
+                            <li class="contacts__item envelope"><a href="info@devstudio.com" class="contacts__link"> 
+                                <svg class="contacts__icon--envelope-h" width="16" height="12" viewBox="0 0 43 32">
+                                    <use href="./images/symbol-defs.svg#icon-enveloperight"></use>
+                                </svg>info@devstudio.com</a></li>
+                            <li class="contacts__item smartphone"><a href="+380961111111" class="contacts__link">
+                                <svg class="contacts__icon--smartphone-h" width="10" height="16" viewBox="0 0 20 32">
+                                    <use href="./images/symbol-defs.svg#icon-smartphoneright"></use>
+                            </svg>+38 096 111 11 11</a></li>
+                        </ul>
+            </div>
+        </header>
     <!--Основна-->
     <main>
         <!-- секція навігаційних кнопок-->
@@ -47,12 +48,12 @@
             <div class="container">
                     <!-- <h1> </h1> -->
                 <nav>
-                    <ul class="buttons-list">
-                        <li class="b-item"><button class="button-item" type="button">Все </button> </li>
-                        <li class="b-item"><button class="button-item" type="button">Веб-сайты </button> </li>
-                        <li class="b-item"><button class="button-item" type="button">Приложения </button> </li>
-                        <li class="b-item"><button class="button-item" type="button">Дизайн </button> </li>
-                        <li class="b-item"><button class="button-item" type="button">Маркетинг </button> </li>
+                    <ul class="list buttons__list">
+                        <li class="button__item--gap"><button class="button__item" type="button">Все </button> </li>
+                        <li class="button__item--gap"><button class="button__item" type="button">Веб-сайты </button> </li>
+                        <li class="button__item--gap"><button class="button__item" type="button">Приложения </button> </li>
+                        <li class="button__item--gap"><button class="button__item" type="button">Дизайн </button> </li>
+                        <li class="button__item--gap"><button class="button__item" type="button">Маркетинг </button> </li>
                     </ul>
                 </nav>
             
@@ -60,137 +61,137 @@
                                     <!-- секція проектів -->
                         <!--<h2></h2>-->
                 
-                    <ul class="list projects-list"> 
-                            <li class="p-item">
-                                <a href="" class="link project-card owerlay">
+                    <ul class="list projects__list"> 
+                            <li class="project__item">
+                                <a href="" class="project__link project__owerlay">
                                     <div class="owerbox">    
                                         <img src="./images/tehnokriak.jpg" alt="Лептоп" width="370" height="404">
-                                            <div class="thumb-project">
-                                                <p class="only-project">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                                            <div class="project__thumb">
+                                                <p class="project__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                             </div>
                                     </div>
-                                            <div class="pack project-box">
-                                                <h3  class="title lead">Технокряк</h3>
-                                                <p class="text disc">Веб-сайт</p> 
+                                            <div class="pack">
+                                                <h3  class="pack__title">Технокряк</h3>
+                                                <p class="pack__text">Веб-сайт</p> 
                                             </div>
                                 </a>
                             </li>
-                            <li class="p-item">
-                                <a href="" class="link project-card">
+                            <li class="project__item">
+                                <a href="" class="project__link">
                                     <div class="owerbox">
                                     <img src="./images/poster-star.jpg" alt="Постер із зірками спорту" width="370" height="404">
-                                            <div class="thumb-project">
-                                                <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                            <div class="project__thumb">
+                                                <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                             </div>
                                     </div>
-                                    <div class="pack project-box">
-                                        <h3 class="title lead">Постер New Orlean vs Golden Star</h3>
-                                        <p class="text disc">Дизайн</p>
+                                    <div class="pack">
+                                        <h3 class="pack__title">Постер New Orlean vs Golden Star</h3>
+                                        <p class="pack__text">Дизайн</p>
                                     </div>
                             </a> 
                             </li> 
 
-                                <li class="p-item">
-                                    <a href="" class="link project-card">
+                                <li class="project__item">
+                                    <a href="" class="project__link">
                                         <div class="owerbox">
                                             <img src="./images/seafood.jpg" alt="Лого ресторану" width="370" height="404">
-                                                <div class="thumb-project">
-                                                    <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                                <div class="project__thumb">
+                                                    <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                                 </div>
                                         </div>
-                                        <div class="pack project-box">
-                                            <h3 class="title lead">Ресторан Seafood</h3>
-                                            <p class="text disc">Приложение</p>
+                                        <div class="pack">
+                                            <h3 class="pack__title">Ресторан Seafood</h3>
+                                            <p class="pack__text">Приложение</p>
                                         </div>
                                     </a>
                                 </li> 
                                                 
-                                <li class="p-item">
-                                    <a href="" class="link project-card">
+                                <li class="project__item">
+                                    <a href="" class="project__link">
                                         <div class="owerbox">
                                             <img src="./images/prime.jpg" alt="Навушники" width="370" height="404">
-                                                <div class="thumb-project">
-                                                    <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                                <div class="project__thumb">
+                                                    <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                                 </div>
                                         </div>
-                                        <div class="pack project-box">
-                                                <h3 class="title lead">Проект Prime</h3>
-                                                <p class="text disc">Маркетинг</p>
+                                        <div class="pack">
+                                                <h3 class="pack__title">Проект Prime</h3>
+                                                <p class="pack__text">Маркетинг</p>
                                         </div>
                                     </a>
                                 </li> 
                                                 
-                                <li class="p-item">
-                                    <a href="" class="link project-card">
+                                <li class="project__item">
+                                    <a href="" class="project__link">
                                         <div class="owerbox"> 
                                             <img src="./images/boxes.jpg" alt="Коробки" width="370" height="404">
-                                                <div class="thumb-project">
-                                                    <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                                <div class="project__thumb">
+                                                    <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                                 </div>
                                         </div>
-                                        <div class="pack project-box">
-                                                <h3 class="title lead">Проект Boxes</h3>
-                                                <p class="text disc">Приложение</p>
+                                        <div class="pack">
+                                                <h3 class="pack__title">Проект Boxes</h3>
+                                                <p class="pack__text">Приложение</p>
                                         </div>
                                     </a>
                                 </li> 
                                                 
-                                <li class="p-item">
-                                    <a href="" class="link project-card">
+                                <li class="project__item">
+                                    <a href="" class="project__link">
                                         <div class="owerbox">
                                             <img src="./images/screen.jpg" alt="Екран" width="370" height="404">
-                                                    <div class="thumb-project">
-                                                        <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                                    <div class="project__thumb">
+                                                        <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                                     </div>
                                         </div>
-                                        <div class="pack project-box">
-                                                <h3 class="title lead">Inspiration has no Borders</h3>
-                                                <p class="text disc">Веб-сайт</p>
+                                        <div class="pack">
+                                                <h3 class="pack__title">Inspiration has no Borders</h3>
+                                                <p class="pack__text">Веб-сайт</p>
                                         </div>
                                     </a>
                                 </li> 
                                                 
-                                <li class="p-item">
-                                    <a href="" class="link project-card">
+                                <li class="project__item">
+                                    <a href="" class="project__link">
                                         <div class="owerbox"> 
                                             <img src="./images/book.jpg" alt="Книжка" width="370" height="404">
-                                                <div class="thumb-project">
-                                                    <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                                <div class="project__thumb">
+                                                    <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                                 </div>
                                         </div>
-                                        <div class="pack project-box">
-                                            <h3 class="title lead">Издание Limited Edition</h3>
-                                            <p class="text disc">Дизайн</p>
+                                        <div class="pack">
+                                            <h3 class="pack__title">Издание Limited Edition</h3>
+                                            <p class="pack__text">Дизайн</p>
                                         </div>
                                     </a>
                                 </li> 
                                                 
-                            <li class="p-item">
-                                <a href="" class="link project-card">
+                            <li class="project__item">
+                                <a href="" class="project__link">
                                     <div class="owerbox">   
                                         <img src="./images/label.jpg" alt="Бірка" width="370" height="404">
-                                            <div class="thumb-project">
-                                                <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                            <div class="project__thumb">
+                                                <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                             </div>
                                     </div>
-                                            <div class="pack project-box">
-                                                    <h3 class="title lead">Проект LAB</h3>
-                                                    <p class="text disc">Маркетинг</p>
+                                            <div class="pack">
+                                                    <h3 class="pack__title">Проект LAB</h3>
+                                                    <p class="pack__text">Маркетинг</p>
                                             </div>
                                 </a>
                             </li>
                                                 
-                            <li class="p-item">
-                                <a href="" class="link project-card">
+                            <li class="project__item">
+                                <a href="" class="project__link">
                                     <div class="owerbox">
                                         <img src="./images/leptop.jpg" alt="Лептоп" width="370" height="404">
-                                            <div class="thumb-project">
-                                                <p class="only-project">Тут може бути розміщена ваша реклама.</p>
+                                            <div class="project__thumb">
+                                                <p class="project__text">Тут може бути розміщена ваша реклама.</p>
                                             </div>
                                     </div>
-                                    <div class="pack project-box">
-                                            <h3 class="title lead">Growing Business</h3>
-                                            <p class="text disc">Приложение</p>
+                                    <div class="pack">
+                                            <h3 class="pack__title">Growing Business</h3>
+                                            <p class="pack__text">Приложение</p>
                                     </div>
                                 </a>
                             </li>
@@ -204,67 +205,65 @@
     <!--підвал сторінки-->
 
     <footer class="footer">
-        <div class="container join">
-            <div class="colone">
-                <a href="./index.html" class="logo down-logo">Web<span class="logo-footer">Studio</span></a>
+        <div class="container container--join">
+            <div class="container--colone">
+                <a href="./index.html" class="logo">Web<span class="logo__text--second--down ">Studio</span></a>
         
-                <address class="address-list">
-                    <p class="text-address">г. Киев, пр-т Леси Украинки, 26</p>
+                <address class="address">
+                    <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
                 </address>
-                <ul class="list contact-list">
-                    <li class="mail"><a href="info@example.com" class="link auth-nav"> info@example.com</a> </li>
-                    <li><a href="+380991111111" class="link auth-nav"> +38 099 111 11 11</a> </li>
+                <ul class="list contacts__list--footer">
+                    <li><a href="info@example.com" class="contacts__link--footer contacts__link--footer--gap"> info@example.com</a> </li>
+                    <li><a href="+380991111111" class="contacts__link--footer"> +38 099 111 11 11</a> </li>
                 </ul>
         
             </div>
-            <div class="coltwo">
-                    <p class="text to-us">присоединяйтесь</p> 
-                        <ul class="list us-list">
-
-                            <li class="us-item"><a href="" class="link us-nav">
-                            <svg class="icon-us">
+            <div class="container--coltwo">
+                    <p class="container--coltwo__gap container--coltwo__text">присоединяйтесь</p> 
+                        <ul class="list us__list">
+                            <li class="us__item"><a href="" class="link us__link">
+                            <svg class="us__icon">
                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
                             </svg>
                         </a>
                             </li>
-
-                            <li class="us-item"> <a href="" class="link us-nav">
-                            <svg class="icon-us">
+                            <li class="us__item"> <a href="" class="link us__link">
+                            <svg class="us__icon">
                                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
                             </svg>
                         </a>
                             </li>
-                            <li class="us-item"><a href="" class="link us-nav">
-                            <svg class="icon-us">
+                            <li class="us__item"><a href="" class="link us__link">
+                            <svg class="us__icon">
                                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
                             </svg>
                         </a>
                             </li>
-                            <li class="us-item"> <a href="" class="link us-nav">
-                            <svg class="icon-us">
+                            <li class="us__item"> <a href="" class="link us__link">
+                            <svg class="us__icon">
                                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
                             </svg>
                         </a>
                             </li>
                     </ul>
-                </div>
-                <div class="colthree">
-                    <form class="footer-form">
-                        <p class="text with-us">присоединяйтесь</p>
-                        <div class="footer-form-mailing">
-                            <div class="mailing-subscribe">
-                                <input type="email" name="email" id="mail" class="mailing-subscribe-input" placeholder="E-mail" />
-                                <label class="subscribe" for="mail"></label>
-                            </div>
-                            <button class="btn-subscribe" type="submit">Подписаться
-                                <svg class="icon-icon-send" width="24" height="24" viewBox="0 0 32 32">
-                                    <use href="./images/symbol-defs.svg#icon-icon-send"></use>
-                                </svg>
-                            </button>
-                        </div>
-                
+            </div>
+                <div class="container--colthree">
+                    <form action="#" class="footer--form">
+                        <p class="footer--form__gap footer--form__text">Подпишитесь на рассылку</p> 
+                        <div class="footer--form__mailing">                          
+                            <div class="footer--form__subscribe">
+                                <input type="email" name="email" id="mail" class="footer--form__input" placeholder="E-mail"/>
+                                <label class="subscribe" for="mail"></label>  
+                            </div>          
+                                        <button class="footer--form__btn--subscribe" type="submit">Подписаться
+                                            <svg class="footer--form__icon" width="24" height="24" viewBox="0 0 32 32">
+                                                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                                            </svg>
+                                        </button>
+                        </div>   
+                        
                     </form>
-                </div>
+                </div>    
         </div>
     </footer>
 </body>
