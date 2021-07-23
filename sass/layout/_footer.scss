@@ -24,7 +24,10 @@
   margin-top: 0px;
 }
 .address__text {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px){
   margin-bottom: 9px;
+ }
 }
 .address {
   font-style: normal;
@@ -33,13 +36,25 @@
   font-size: 14px;
   line-height: 1.1;
   width: 231px;
-  margin-right: 70px;
+  margin-right: 0px;
+  width: 480px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 1200px){
+    margin-right: 70px;
+  }
+  
 }
 .contacts__list--footer {
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: 0px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 60px;
+  margin-left: 0px;
+  width: 480px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
   }
 .contacts__link--footer{
   color: $contacts__link--footer;
@@ -51,23 +66,62 @@
   transition-property: color;
 }
 .contacts__link--footer--gap {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px){
+  margin-bottom: 9px;  
+  }
+  
 }
   
 .container--join {
-  display: flex;
-  align-items: baseline;
+  width: 100%;
+ 
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+    display: flex;
+    align-items: baseline;}
 }
   
 .container--colone {
-  width: 231px;
-}
-.container--coltwo {
-  margin-left: 70px;
-  & > .container--coltwo__gap {
-    margin-top: 0px;
+  width: 480px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px){
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
   }
+  @media screen and (min-width: 1200px){
+  width: 231px;  
+  }
+  
 }
+
+.container--coltwo {
+  width: 480px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px){
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px){
+  margin-left: 70px;   
+    }
+}
+.container--space{
+@media screen and (min-width: 768px) {
+  display: flex;
+  justify-content: space-around;
+  }
+}  
+.container--coltwo > .container--coltwo__gap {
+  margin-top: 0px;
+  }
+
 .container--coltwo__text {
     @include font(14px, 700, 1.1);
     font-weight: bold;
@@ -80,7 +134,7 @@
 .us__list {
     display: flex;
     justify-content: flex-start;
-    margin: 0px;
+    margin-bottom: 60px;
     
   }
 .us__link{
@@ -110,15 +164,41 @@
   fill: #fff;
   }
 .container--colthree {
-  margin-left: 93px;
-}    
+  width: 480px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width: 768px){
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px){
+    margin-left: 93px;   
+  }
+
+} 
+.footer--form{
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}   
 .footer--form__gap {
   margin-top: 0;
 }
   
 .footer--form__mailing {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  
+  @media screen and (min-width: 1200px){
+    flex-direction: row;  
+  }
 }
 .footer--form > .footer--form__text {
   margin-top: 0px;
@@ -134,6 +214,7 @@
   color: $primery-br-color;
   font-size: 14px;
   margin-bottom: 20px;
+  
 }
 .footer--form__subscribe {
   display: inline-block;
@@ -141,6 +222,8 @@
   margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 4px;
+
+  margin-bottom: 20px;
   }
 .footer--form__subscribe > .footer--form__input{
   border-style: none;
@@ -152,6 +235,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: inherit;
+ 
 }
 .footer--form__input::placeholder{
   font-size: 16px;
@@ -162,6 +246,7 @@
   color: rgba(255, 255, 255, 0.6);
 } 
 
+  
 .footer--form__btn--subscribe {
   @include font(16px, 700, 1.8);
   width: 200px;
@@ -177,6 +262,7 @@
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  
 }
 .footer--form__icon {
   display: inline-flex;
